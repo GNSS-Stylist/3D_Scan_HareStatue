@@ -1,0 +1,30 @@
+// Camera transform operations (long mount, 26.12.2020):
+// (Remove all these operations when generating script for the rig itself
+// as it's origin equals the origin solved by the location/orientation solver)
+
+// First calculate coordinates for the "camera eye" (viewing reference point / origin)
+// relative to the camera's mounting point
+
+// Lens is 13 mm to the left of the mounting point of the camera ("to west")
+translate 0 -0.013 0;
+
+// Height of the center of the lens (29 mm)
+translate 0 0 -0.029;
+
+// There's about 1 mm washer under the camera:
+translate 0 0 -0.001;
+
+// Estimated viewing reference point is 32 mm forward from the mounting point. This is really just a wild quess
+translate 0.032 0 0;
+
+// Calibration:
+rotate yaw 0 deg;
+rotate roll -2 deg;	// Inaccuracy in mounting
+
+// Now we can rotate the camera around the mounting point before moving it to the desired position
+rotate pitch -19 deg;
+
+// Move the camera to the mounting point (relative to the rig's origin)
+translate -0.193 0 0;	// 193 mm back
+translate 0 0.040 0;	// 40 mm right
+translate 0 0 -0.173;	// 173 mm up

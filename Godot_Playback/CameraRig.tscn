@@ -1,0 +1,440 @@
+[gd_scene load_steps=49 format=2]
+
+[ext_resource path="res://LidarRotator.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.764706, 0.764706, 0.764706, 1 )
+metallic = 0.5
+roughness = 0.5
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 2, 0.035, 0.035 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.188235, 0.188235, 0.188235, 1 )
+
+[sub_resource type="CubeMesh" id=4]
+material = SubResource( 3 )
+size = Vector3( 0.36, 0.024, 0.24 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.188235, 0.188235, 0.188235, 1 )
+
+[sub_resource type="CubeMesh" id=6]
+material = SubResource( 5 )
+size = Vector3( 0.35, 0.006, 0.24 )
+
+[sub_resource type="SphereMesh" id=7]
+radius = 0.1
+height = 0.05
+radial_segments = 8
+rings = 8
+
+[sub_resource type="CubeMesh" id=8]
+material = SubResource( 1 )
+size = Vector3( 0.08, 0.035, 0.035 )
+
+[sub_resource type="CubeMesh" id=9]
+material = SubResource( 1 )
+size = Vector3( 0.13, 0.035, 0.035 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.101961, 0.101961, 0.101961, 1 )
+metallic = 0.5
+
+[sub_resource type="CylinderMesh" id=11]
+material = SubResource( 10 )
+top_radius = 0.038
+bottom_radius = 0.038
+height = 0.018
+rings = 1
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 0.101961, 0.101961, 0.101961, 1 )
+metallic = 0.5
+
+[sub_resource type="CylinderMesh" id=13]
+material = SubResource( 12 )
+top_radius = 0.034
+bottom_radius = 0.037
+height = 0.023
+rings = 1
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.560784, 0, 0, 1 )
+metallic = 0.56
+metallic_specular = 0.35
+emission_enabled = true
+emission = Color( 0.807843, 0, 0.211765, 1 )
+emission_energy = 3.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SphereMesh" id=15]
+material = SubResource( 14 )
+radius = 0.005
+height = 0.005
+radial_segments = 16
+rings = 16
+is_hemisphere = true
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0.764706, 0.764706, 0.764706, 1 )
+metallic = 0.5
+roughness = 0.5
+
+[sub_resource type="CubeMesh" id=17]
+material = SubResource( 16 )
+size = Vector3( 0.02, 0.003, 0.03 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 0.764706, 0.764706, 0.764706, 1 )
+metallic = 0.62
+roughness = 0.21
+
+[sub_resource type="CylinderMesh" id=19]
+material = SubResource( 18 )
+top_radius = 0.005
+bottom_radius = 0.005
+height = 0.005
+radial_segments = 6
+rings = 1
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_color = Color( 0.764706, 0.764706, 0.764706, 1 )
+metallic = 0.5
+roughness = 0.5
+
+[sub_resource type="CubeMesh" id=21]
+material = SubResource( 20 )
+size = Vector3( 0.02, 0.003, 0.24 )
+
+[sub_resource type="SpatialMaterial" id=22]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CubeMesh" id=23]
+material = SubResource( 22 )
+size = Vector3( 2, 0.035, 0.035 )
+
+[sub_resource type="SpatialMaterial" id=24]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CubeMesh" id=25]
+material = SubResource( 24 )
+size = Vector3( 0.08, 0.035, 0.035 )
+
+[sub_resource type="SpatialMaterial" id=26]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CubeMesh" id=27]
+material = SubResource( 26 )
+size = Vector3( 0.13, 0.035, 0.035 )
+
+[sub_resource type="SpatialMaterial" id=28]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CubeMesh" id=29]
+material = SubResource( 28 )
+size = Vector3( 0.13, 0.035, 0.035 )
+
+[sub_resource type="SpatialMaterial" id=30]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CylinderMesh" id=31]
+material = SubResource( 30 )
+top_radius = 0.038
+bottom_radius = 0.038
+height = 0.018
+rings = 1
+
+[sub_resource type="SpatialMaterial" id=32]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CylinderMesh" id=33]
+material = SubResource( 32 )
+top_radius = 0.034
+bottom_radius = 0.037
+height = 0.023
+rings = 1
+
+[sub_resource type="SpatialMaterial" id=34]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="SphereMesh" id=35]
+material = SubResource( 34 )
+radius = 0.005
+height = 0.005
+radial_segments = 16
+rings = 16
+is_hemisphere = true
+
+[sub_resource type="SpatialMaterial" id=36]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CubeMesh" id=37]
+material = SubResource( 36 )
+size = Vector3( 0.02, 0.003, 0.03 )
+
+[sub_resource type="SpatialMaterial" id=38]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CylinderMesh" id=39]
+material = SubResource( 38 )
+top_radius = 0.005
+bottom_radius = 0.005
+height = 0.005
+radial_segments = 6
+rings = 1
+
+[sub_resource type="SpatialMaterial" id=40]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="CubeMesh" id=41]
+material = SubResource( 40 )
+size = Vector3( 0.36, 0.024, 0.24 )
+
+[sub_resource type="CubeMesh" id=42]
+size = Vector3( 0.35, 0.006, 0.24 )
+
+[sub_resource type="SpatialMaterial" id=43]
+flags_unshaded = true
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=44]
+albedo_color = Color( 0.164706, 0.133333, 0.133333, 1 )
+
+[sub_resource type="CubeMesh" id=45]
+material = SubResource( 44 )
+size = Vector3( 0.1, 0.06, 0.02 )
+
+[sub_resource type="SpatialMaterial" id=46]
+albedo_color = Color( 0.45098, 0.294118, 0.294118, 1 )
+
+[sub_resource type="CylinderMesh" id=47]
+material = SubResource( 46 )
+top_radius = 0.02
+bottom_radius = 0.02
+height = 0.04
+radial_segments = 16
+rings = 1
+
+[node name="CameraRig" type="Spatial"]
+
+[node name="CrossBar" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.018, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="BackBarLeft" type="MeshInstance" parent="."]
+transform = Transform( -0.207912, 0, 0.978148, 0, 1, 0, -0.978148, 0, -0.207912, -0.2, -0.053, 0.95 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="BackBarRight" type="MeshInstance" parent="."]
+transform = Transform( -0.207912, 0, -0.978148, 0, 1, 0, 0.978148, 0, -0.207912, 0.2, -0.053, 0.95 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Laptop" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.984711, -0.174198, 0, 0.174198, 0.984711, -0.384449, -0.0111302, 0.103462 )
+
+[node name="Keyboard" type="MeshInstance" parent="Laptop"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.012, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Lid" type="Spatial" parent="Laptop"]
+transform = Transform( 1, 0, 0, 0, -0.438371, 0.898794, 0, -0.898794, -0.438371, 0, 0.03, -0.115 )
+
+[node name="Display" type="MeshInstance" parent="Laptop/Lid"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Antenna_A" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98, 0.054, 0 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Antenna_B" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.98, 0.054, 0 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Antenna_C" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.019, 1.9 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="LidarMount" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099, 0, 0 )
+
+[node name="Bar_Center" type="MeshInstance" parent="LidarMount"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, -0.018, -0.063 )
+mesh = SubResource( 8 )
+material/0 = null
+
+[node name="Bar_Upper" type="MeshInstance" parent="LidarMount"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0.017, -0.038 )
+mesh = SubResource( 9 )
+material/0 = null
+
+[node name="Bar_Lower" type="MeshInstance" parent="LidarMount"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, -0.052, -0.038 )
+mesh = SubResource( 9 )
+material/0 = null
+
+[node name="Lidar" type="Spatial" parent="LidarMount"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018, 0.003, -0.061 )
+
+[node name="Base" type="MeshInstance" parent="LidarMount/Lidar"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -0.009, 0, 0 )
+mesh = SubResource( 11 )
+material/0 = null
+
+[node name="Rotator" type="Spatial" parent="LidarMount/Lidar"]
+transform = Transform( 1, 0, 0, 0, 0.999123, -0.0418757, 0, 0.0418757, 0.999123, -0.031, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="Cylinder" type="MeshInstance" parent="LidarMount/Lidar/Rotator"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, 0.004, 0, 0 )
+mesh = SubResource( 13 )
+material/0 = null
+
+[node name="Eye" type="MeshInstance" parent="LidarMount/Lidar/Rotator"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0.033 )
+mesh = SubResource( 15 )
+material/0 = null
+
+[node name="CameraBase" type="Spatial" parent="."]
+transform = Transform( 0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, 0, 0, 0 )
+
+[node name="MountingSlat" type="MeshInstance" parent="CameraBase"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0 )
+mesh = SubResource( 17 )
+material/0 = null
+
+[node name="Nut" type="MeshInstance" parent="CameraBase"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0 )
+mesh = SubResource( 19 )
+material/0 = null
+
+[node name="ExtensionSlat" type="MeshInstance" parent="CameraBase"]
+transform = Transform( 1.16747, 0.138633, 0.0707863, -0.149592, 0.851171, 0.80021, 0.0430331, -0.80218, 0.861312, 0.00586551, 0.0936851, 0.113568 )
+mesh = SubResource( 21 )
+material/0 = null
+
+[node name="BlueMask" type="Spatial" parent="."]
+visible = false
+
+[node name="CrossBar_Blue" type="MeshInstance" parent="BlueMask"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.018, 0 )
+mesh = SubResource( 23 )
+material/0 = null
+
+[node name="LidarMount_Blue" type="Spatial" parent="BlueMask"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099, 0, 0 )
+
+[node name="Bar_Center" type="MeshInstance" parent="BlueMask/LidarMount_Blue"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, -0.018, -0.063 )
+mesh = SubResource( 25 )
+material/0 = null
+
+[node name="Bar_Upper" type="MeshInstance" parent="BlueMask/LidarMount_Blue"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0.017, -0.038 )
+mesh = SubResource( 27 )
+material/0 = null
+
+[node name="Bar_Lower" type="MeshInstance" parent="BlueMask/LidarMount_Blue"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, -0.052, -0.038 )
+mesh = SubResource( 29 )
+material/0 = null
+
+[node name="Lidar" type="Spatial" parent="BlueMask/LidarMount_Blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018, 0.003, -0.061 )
+
+[node name="Base" type="MeshInstance" parent="BlueMask/LidarMount_Blue/Lidar"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -0.009, 0, 0 )
+mesh = SubResource( 31 )
+material/0 = null
+
+[node name="Rotator" type="Spatial" parent="BlueMask/LidarMount_Blue/Lidar"]
+transform = Transform( 1, 0, 0, 0, 0.999123, -0.0418757, 0, 0.0418757, 0.999123, -0.031, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="Cylinder" type="MeshInstance" parent="BlueMask/LidarMount_Blue/Lidar/Rotator"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, 0.004, 0, 0 )
+mesh = SubResource( 33 )
+material/0 = null
+
+[node name="Eye" type="MeshInstance" parent="BlueMask/LidarMount_Blue/Lidar/Rotator"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0.033 )
+mesh = SubResource( 35 )
+material/0 = null
+
+[node name="CameraBase_Blue" type="Spatial" parent="BlueMask"]
+transform = Transform( 0.97237, 0, 0.233445, 0, 1, 0, -0.233445, 0, 0.97237, 0, 0, 0 )
+
+[node name="MountingSlat" type="MeshInstance" parent="BlueMask/CameraBase_Blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0 )
+mesh = SubResource( 37 )
+material/0 = null
+
+[node name="Extension" type="Spatial" parent="BlueMask/CameraBase_Blue"]
+transform = Transform( 1, 0, 0, 0, 0.981627, 0.190809, 0, -0.190809, 0.981627, 0, 0, 0 )
+
+[node name="Slat" type="MeshInstance" parent="BlueMask/CameraBase_Blue/Extension"]
+transform = Transform( 1, -2.98023e-08, 1.04308e-07, -3.72529e-09, 1, 0, -2.98023e-08, 1.04308e-07, 1, 0, -0.002, 0.07 )
+mesh = SubResource( 21 )
+material/0 = null
+
+[node name="Nut" type="MeshInstance" parent="BlueMask/CameraBase_Blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0 )
+mesh = SubResource( 39 )
+material/0 = null
+
+[node name="Laptop_Blue" type="Spatial" parent="BlueMask"]
+transform = Transform( 1, 0, 0, 0, 0.984711, -0.174198, 0, 0.174198, 0.984711, -0.255896, -0.0111302, 0.103462 )
+
+[node name="Keyboard" type="MeshInstance" parent="BlueMask/Laptop_Blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.012, 0 )
+mesh = SubResource( 41 )
+material/0 = null
+
+[node name="Lid" type="Spatial" parent="BlueMask/Laptop_Blue"]
+transform = Transform( 1, 0, 0, 0, -0.438371, 0.898794, 0, -0.898794, -0.438371, 0, 0.03, -0.115 )
+
+[node name="Display" type="MeshInstance" parent="BlueMask/Laptop_Blue/Lid"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115 )
+mesh = SubResource( 42 )
+material/0 = SubResource( 43 )
+
+[node name="Camera" type="Spatial" parent="."]
+transform = Transform( 0.999999, 0, 0, 0, 0.945518, 0.325568, 0, -0.325568, 0.945518, 0.04, 0.173, 0.193 )
+
+[node name="CameraBody" type="MeshInstance" parent="Camera"]
+transform = Transform( 0.999702, -0.0004264, 0.0244284, 0, 0.999848, 0.0174524, -0.0244322, -0.0174472, 0.999549, -0.007, 0.03, 0 )
+mesh = SubResource( 45 )
+material/0 = null
+
+[node name="Lens" type="MeshInstance" parent="Camera/CameraBody"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, -0.006, -0.002, -0.013 )
+mesh = SubResource( 47 )
+material/0 = null
+
+[node name="RigCamera" type="Camera" parent="Camera/CameraBody/Lens"]
+transform = Transform( 1, 7.33417e-09, -5.89062e-08, -4.65661e-10, -1.78814e-07, -1, 5.82077e-11, 1, -1.3411e-07, 0, 0.009, 0 )
+fov = 42.0
+near = 0.02
+far = 1000.0

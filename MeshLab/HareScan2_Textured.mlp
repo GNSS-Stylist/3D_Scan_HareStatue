@@ -1,0 +1,74 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh label="HareScan2.xyz" visible="1" filename="HareScan2.xyz">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption wireWidth="1" wireColor="64 64 64 255" solidColor="192 192 192 255" pointColor="131 149 69 255" boxColor="234 234 234 255" pointSize="3">000111000000000000000100000001001000001010100000000100111011110000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh label="Poisson mesh - untextured" visible="0" filename="HareScan2_Poisson_7_SurfacePrecLapSmooth_5.ply">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption wireWidth="1" wireColor="64 64 64 255" solidColor="192 192 192 255" pointColor="131 149 69 255" boxColor="234 234 234 255" pointSize="3">100001000000000000000100000001011000001010100000000100111011110000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh label="Poisson mesh - textured" visible="1" filename="HareScan2_Poisson_7_SurfacePrecLapSmooth_5_Textured.dae">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption wireWidth="1" wireColor="64 64 64 255" solidColor="255 255 255 255" pointColor="131 149 69 255" boxColor="234 234 234 255" pointSize="3">100001000000000000000100000001011000010010100000000100111011110000001001</RenderingOption>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup>
+  <MLRaster label="HareScan2_ITOW58413000.png">
+   <VCGCamera TranslationVector="-0.569671 -1.23754 -0.103165 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="0.179599 0.0926088 -0.979371 0 -0.498867 0.866626 -0.00953574 0 0.847866 0.490288 0.201845 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58413000.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58382750.png">
+   <VCGCamera TranslationVector="0.163241 -1.19104 -0.640532 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="0.98626 0.0434703 0.159378 0 0.0229914 0.919251 -0.393001 0 -0.163592 0.391265 0.905621 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58382750.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58464375.png">
+   <VCGCamera TranslationVector="0.540857 -1.04888 -0.0129268 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="-0.141126 0.0733296 0.987272 0 0.243787 0.969118 -0.0371328 0 -0.959505 0.235444 -0.154645 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58464375.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58404500.png">
+   <VCGCamera TranslationVector="-0.0564578 -1.2404 0.462591 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="-0.977414 0.0771309 -0.196754 0 -0.0501738 0.819704 0.570585 0 0.20529 0.56757 -0.79732 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58404500.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58394500.png">
+   <VCGCamera TranslationVector="0.461845 -1.22023 -0.22386 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="0.360152 0.0338401 0.93228 0 0.444169 0.872582 -0.203261 0 -0.820369 0.487295 0.299231 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58394500.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58400500.png">
+   <VCGCamera TranslationVector="0.326098 -1.20218 0.403173 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="-0.817332 0.0565694 0.573383 0 0.314444 0.877693 0.361634 0 -0.482797 0.475872 -0.735155 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58400500.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58409125.png">
+   <VCGCamera TranslationVector="-0.460942 -1.24443 0.307104 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="-0.500799 0.0698447 -0.862741 0 -0.405963 0.861357 0.305383 0 0.764457 0.503176 -0.403012 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58409125.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58417000.png">
+   <VCGCamera TranslationVector="-0.322187 -1.22175 -0.452444 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="0.830915 0.0620993 -0.552923 0 -0.3237 0.86222 -0.389609 0 0.452547 0.502713 0.736533 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58417000.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58485250.png">
+   <VCGCamera TranslationVector="0.176945 -0.993936 -0.629842 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="0.927978 0.046917 0.36967 0 0.0113397 0.988027 -0.153862 0 -0.372463 0.146973 0.916335 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58485250.png" semantic="1"/>
+  </MLRaster>
+  <MLRaster label="HareScan2_ITOW58503250.png">
+   <VCGCamera TranslationVector="-0.132538 -0.922682 0.659391 1" CameraType="0" LensDistortion="0 0" ViewportPx="1920 1080" PixelSizeMm="0.030319 0.030319" FocalMm="42.545567" RotationMatrix="-0.947199 0.058087 -0.315341 0 0.056023 0.998307 0.0156141 0 0.315714 -0.00287666 -0.94885 0 0 0 0 1 " BinaryData="0" CenterPx="960 540"/>
+   <Plane fileName="Rasters/HareScan2_ITOW58503250.png" semantic="1"/>
+  </MLRaster>
+ </RasterGroup>
+</MeshLabProject>

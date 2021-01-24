@@ -1,0 +1,21 @@
+// Division between "before and after rotation" here is done
+// "in" mounting point (center) of the lidar unit.
+
+// Calibration for "up/down"-tilt (when lidar is lying on a NE-plane) of the laser beam:
+rotate pitch 0 deg;
+
+// Up/down shift of the measurement "core"'s measurement thingies (rotating part with laser and receiver):
+translate 0 0 -0.031;	// Value 31 mm is from RPLidar A3M1's spec (drawing)
+
+// Possible shift of the measurement axis:
+// (could be shifted in side (=E/Y) axis if the laser is used as the axis)
+// RPLidar doesn't seem to need sideways shift, but 5 mm offset in N-axis
+// (practically adding 5mm into distance measurement) seems to lead to closer to original, especially
+// when there's smaller features (less "fat" around them). Bigger values starts "eroding" them.
+//translate 0.005 0 0;
+
+// More eroded version (even closer to the original?):
+// This may actually be a bit excessive, but leads to better "detaching" the front legs of the hare statue
+// from the body. This erosion may not be needed if normals were calculated better, see
+// https://github.com/GNSS-Stylist/GNSS-Stylus/issues/11
+translate 0.0065 0 0;

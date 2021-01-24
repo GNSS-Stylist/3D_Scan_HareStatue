@@ -1,0 +1,35 @@
+// Division between "before and after rotation" here is done
+// "in" mounting point (center) of the lidar unit.
+// So here we can define operations just for the mounting point of the unit.
+// Note that the origin should be in the middle point of the rig's front square tube,
+// on the top surface of it.
+
+// Calibration of the mounting direction (on the mounting plane):
+// This (identical line) could be in the end of "before"-section as well
+// but this is most probably caused by inaccuracy in the mounting to the rig
+rotate yaw 2.4 deg;
+
+// Turn the unit so that 0 degree-point faces backwards
+rotate yaw 180 deg;
+
+// Turn it to the left 90 degrees
+rotate roll -90 deg;
+
+// Move forward
+translate 0.06075 0 0;
+
+// Compensate errors in the mounting direction (left/right (=yaw)):
+rotate yaw 0 deg;
+
+// Move up/down
+// (done in several steps to make it easier to separate the individual operations)
+translate 0 0 -0.02075;	// 20.75 is half the lidar's mounting screw's distance 41.5 mm (bottom ones are in the center of the 35 mm rig's front square tube)
+translate 0 0 0.0175;	// 17.5 is half of the square tube's diameter (35 mm)
+
+// Move left/right
+// (done in several steps to make it easier to separate the individual operations)
+translate 0 0.099 0;	// Move center point of the square tube to right (mounting bolt location)
+translate 0 -0.0175 0;	// Move back half of the tube's diameter (35 mm)
+
+// Sag compensation:
+rotate pitch -0 deg;

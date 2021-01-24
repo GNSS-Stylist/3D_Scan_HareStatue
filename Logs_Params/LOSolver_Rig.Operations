@@ -1,0 +1,3 @@
+// Rig transform operations
+// (No operations needed, since rig's origin equals 
+// the origin solved by location/orientation solver).
