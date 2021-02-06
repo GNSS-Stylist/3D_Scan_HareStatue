@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="LOSolverDemo"
+config/name="3D_Scan_Hare"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
